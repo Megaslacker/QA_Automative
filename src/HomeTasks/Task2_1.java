@@ -1,5 +1,5 @@
 package HomeTasks;
-
+// CHANGE FROM GITHUB SITE
 import java.util.Scanner;
 
 public class Task2_1 {
