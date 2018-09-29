@@ -9,12 +9,11 @@ public class Task4_1_1 {
         Person person = new Person();
         person.setName("John");
         person.setSurname("Smith");
-        person.setAge(18);
+        person.setAge(25);
         person.setPhone("+(123)-45-67-89");
-        System.out.println("person Name: "+ person.getName());
-        System.out.println("person Surname: "+ person.getSurname());
-        System.out.println("person Age: "+ person.getAge());
-        System.out.println("person phone: "+ person.getPhone());
+        person.printAllInformation();
+        person.printName();
+        System.out.println("Person is adult? " + person.isAdult());
 
 
 
