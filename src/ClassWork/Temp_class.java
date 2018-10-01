@@ -5,10 +5,11 @@ package ClassWork;
  */
 public class Temp_class {
     public static void main(String[] args) {
-        Square square = new Square();
-        System.out.println(square.getPeriment(5));
-        System.out.println(square.getPeriment(3.14, 5));
-
+        Person perso1 = new Person();
+        Person person2 = new Person(1);
+        Person person3 = new Person(2, "John");
+        Person person4 = new Person(2, "John", 25);
+        person4.print();
 
     }
 }
