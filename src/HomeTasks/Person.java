@@ -1,11 +1,14 @@
 package HomeTasks;
 
+import java.io.File;
+
 /**
  * Created by kotok_artem on 28.09.2018.
  */
 
 public class Person {
     // Variables
+
     private String name;
     private String surname;
     private int age;

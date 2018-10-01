@@ -10,7 +10,7 @@ public class Task2_2 {
     }
 
     public static void main(String[] args) {
-        int[] arr = Task2_1.builder();
+        int[] arr = HomeTasks.Task2_1.builder();
         Task2_1.printArray(arr);
         Task2_2.arrMultiply(arr);
     }
