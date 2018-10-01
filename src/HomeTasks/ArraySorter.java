@@ -5,4 +5,7 @@ public class ArraySorter {
 
         return arr;
     }
+    public static int[] minMaxSorting(int[] arr){
+        return arr;
+    }
 }
