@@ -2,7 +2,7 @@ package HomeTasks;
 
 public class Massive {
 
-//-	метод multiptyBy3, который принимает массив, умножает каждый элемент массива на 3 и возвращает умноженный массив
+
     public void printMassiveAsLine(int[] arr) {
         System.out.println("Array");
         for (int out : arr) {

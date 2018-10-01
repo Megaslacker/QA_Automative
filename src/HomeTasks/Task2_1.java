@@ -32,6 +32,14 @@ public class Task2_1 {
 
     }
 
+    public static int[] randomArray(int size){
+        int[] arr = new int[size];
+        for (int i = 0; i <= arr.length - 1; i++) {
+            arr[i] = (int) (Math.random() * 100);
+        }
+        return arr;
+    }
+
     public static void printArray(int[] arr) {
         System.out.println("Array");
         for (int out : arr) {
@@ -52,5 +60,6 @@ public class Task2_1 {
         int[] arr = Task2_1.builder();
         Task2_1.printArray(arr);
         Task2_1.printArrayRevers(arr);
+
     }
 }
