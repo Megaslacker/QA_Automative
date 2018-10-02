@@ -1,8 +1,8 @@
 package HomeTasks;
 
 public class ArraySorter {
-    public static int[] insertionSort(int[] arr) {
-        int temp = 0;
+    public static int[] insertionSort(int[] arr) { // after checking Habr I've understood that in fact this is NOT Insertion Sort.
+        int temp = 0;                              // Still it works.
         for (int runner = 1; runner < arr.length; runner++) {
 
             for (int CheckPosition = 0; CheckPosition < runner; CheckPosition++) {
@@ -21,17 +21,17 @@ public class ArraySorter {
         }
         return arr;
     }
-//    public static int[] insertionSort(int[] arr) {
-//        int temp =0;
-//        for(int i=1;i<arr.length;i++)
-//            for(int j=i;j>0 && arr[j-1]>arr[j];j--) // пока j>0 и элемент j-1 > j, x-массив int
-//            {temp = arr[j-1];
-//                arr[j-1] = arr[j];
-//                arr[j] = temp;}        // меняем местами элементы j и j-1
-//        return arr;
-//    }
+    public static int[] insertionSort2(int[] arr) { // found at Habr AFTER my own code worked fine. For learning purposes.
+        int temp =0;
+        for(int i=1;i<arr.length;i++)
+            for(int j=i;j>0 && arr[j-1]>arr[j];j--) // пока j>0 и элемент j-1 > j
+            {temp = arr[j-1];
+                arr[j-1] = arr[j];
+                arr[j] = temp;}        // меняем местами элементы j и j-1
+        return arr;
+    }
 
-    public static int[] bubleSort(int[] arr) {
+    public static int[] bubbleSort(int[] arr) { // classic Bubble Sort.
         int temp = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int t = 0; t < arr.length - 1 - i; t++) {
@@ -46,7 +46,7 @@ public class ArraySorter {
         return arr;
     }
 
-    public static int[] minMaxSorting(int[] arr) {
+    public static int[] minMaxSorting(int[] arr) { // Sorting Array by determining Man and Max value and putting them to the head and tail of the unsorted array.
         int tempMin = 0;
         int tempMax = 0;
         for (int i = 0; i < arr.length; i++) {
