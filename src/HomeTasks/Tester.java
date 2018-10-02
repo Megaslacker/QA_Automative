@@ -12,6 +12,7 @@ public class Tester {
 
     String privet = "Привет ";
     String hi = "Hello ";
+    String eMailSuffix = "@TheCompany.com";
     static String jobIntro = "We are looking for QA Automative with ";
     static String jobExp = " years of expirience ";
     static String jobEnglish = " level of English";
@@ -54,6 +55,15 @@ public class Tester {
         System.out.println(isFull ? this.name + " " + this.surname + " Exprirence: " + this.expirienceInYears + " years, Salary " + this.salary : this.name + " " + this.surname);
     }
 
+    public void generateEmail(String surname) {
+        System.out.println(this.surname + eMailSuffix);
+    }
+
+    public void generateEmail(String name, String surname) {
+        System.out.println(this.name + this.surname + eMailSuffix);
+    }
+
+    // static Methods
     public static String jobJequest(int expirienceInYears) {
         return (jobIntro + expirienceInYears + jobExp);
     }

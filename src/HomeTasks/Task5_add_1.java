@@ -29,11 +29,19 @@ public class Task5_add_1 {
     public static void main(String[] args) {
 
 
-        System.out.println(regExpTester1("abc$asdd"));
-        System.out.println(regExpTester1("abcd1"));
+        String regEx1_Example1 = "125abc$";
+        String regEx1_Example2 = "125abcddd$";
+        System.out.println("RegEX 1:");
+        System.out.println(regEx1_Example1 + " " + regExpTester1(regEx1_Example1));
+        System.out.println(regEx1_Example2 + " " + regExpTester1(regEx1_Example2));
 
-        //        System.out.println(regExpTester2("qw12"));
-//        System.out.println(regExpTester2("134"));
+        String regEx2_Example1 = "qw12";
+        String regEx2_Example2 = "134";
+        String regEx2_Example3 = "qw1;%:2";
+        System.out.println("RegEX 2:");
+        System.out.println(regEx2_Example1 + " " + regExpTester2(regEx2_Example1));
+        System.out.println(regEx2_Example2 + " " + regExpTester2(regEx2_Example2));
+        System.out.println(regEx2_Example3 + " " + regExpTester2(regEx2_Example3));
 
     }
 
