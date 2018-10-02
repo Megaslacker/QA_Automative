@@ -21,7 +21,15 @@ public class ArraySorter {
         }
         return arr;
     }
-
+//    public static int[] insertionSort(int[] arr) {
+//        int temp =0;
+//        for(int i=1;i<arr.length;i++)
+//            for(int j=i;j>0 && arr[j-1]>arr[j];j--) // пока j>0 и элемент j-1 > j, x-массив int
+//            {temp = arr[j-1];
+//                arr[j-1] = arr[j];
+//                arr[j] = temp;}        // меняем местами элементы j и j-1
+//        return arr;
+//    }
 
     public static int[] bubleSort(int[] arr) {
         int temp = 0;
