@@ -15,6 +15,7 @@ public class Tester {
     static String jobIntro = "We are looking for QA Automative with ";
     static String jobExp = " years of expirience ";
     static String jobEnglish = " level of English";
+
     // constructors
     public Tester() {
 
@@ -35,25 +36,29 @@ public class Tester {
         this.englishLevel = englishLevel;
         this.salary = salary;
     }
+
     // methods
-    public void sayHello(){
+    public void sayHello() {
         System.out.println(privet + this.name);
     }
-     public void sayHello(String englishLevel){ // i mean if no English level is set,  greet in russian, else - in English
-         System.out.println(hi + this.name);
-     }
-     public void printInfo(){
-         System.out.println(this.name + " " + this.surname);
-     }
 
-    public void printInfo(boolean isFull){
-        System.out.println(isFull?this.name + " " + this.surname + " Exprirence: " + this.expirienceInYears + " years, Salary " + this.salary:this.name + " " + this.surname);
+    public void sayHello(String englishLevel) { // i mean if no English level is set,  greet in russian, else - in English
+        System.out.println(hi + this.name);
     }
 
-     public static String jobJequest (int expirienceInYears){
-         return (jobIntro + expirienceInYears + jobExp);
-     }
-    public static String jobJequest (int expirienceInYears, String englishLevel){
+    public void printInfo() {
+        System.out.println(this.name + " " + this.surname);
+    }
+
+    public void printInfo(boolean isFull) {
+        System.out.println(isFull ? this.name + " " + this.surname + " Exprirence: " + this.expirienceInYears + " years, Salary " + this.salary : this.name + " " + this.surname);
+    }
+
+    public static String jobJequest(int expirienceInYears) {
+        return (jobIntro + expirienceInYears + jobExp);
+    }
+
+    public static String jobJequest(int expirienceInYears, String englishLevel) {
         return (jobIntro + expirienceInYears + jobExp + " and " + englishLevel + jobEnglish);
     }
 
