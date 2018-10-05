@@ -20,6 +20,18 @@ public class Class_7 {
         String [] names = {"John", "JAck", "Jose" };
         String hello = "Hello, %s";
         Arrays.asList(names).stream().forEach(name -> System.out.println(String.format(hello, name)));
+        StringBuilder builder = new StringBuilder("String builder");
+        StringBuffer buffer = new StringBuffer("String buffer");
+        builder.append("xxx");
+        buffer.append("xxx");
+        builder.insert(5, "xxx");
+        buffer.insert(5, "xxx");
+        builder.deleteCharAt(6);
+        buffer.deleteCharAt(6);
+        builder.delete(4,12);
+        buffer.delete(4,12);
+        builder.reverse();
+        buffer.reverse();
 
     }
 }
