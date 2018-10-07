@@ -39,8 +39,9 @@ public class Task7_1 {
                longestPosition=i;
            }
        }
-        System.out.println("Shortest: "+strings[shortestPosition]+" at position: "+shortestPosition);
-        System.out.println("Longest: "+strings[longestPosition]+" at position: "+longestPosition);
+       String atPosition = " at position: ";
+        System.out.println("Shortest: "+strings[shortestPosition]+atPosition+shortestPosition);
+        System.out.println("Longest: "+strings[longestPosition]+atPosition+longestPosition);
     }
 }
 
