@@ -10,17 +10,38 @@ public class Task7_1 {
         scan.nextLine();
         String[] strings = new String[numberOfStrings];
         for (int i = 0; i < numberOfStrings; i++) {
-            System.out.println("Type string Nr. "+(i+1));
-            strings[i]=scan.nextLine();
+            System.out.println("Type string Nr. " + i);
+            strings[i] = scan.nextLine();
         }
         scan.close();
         return strings;
     }
 
-    public static void main(String[] args) {
-        String[] strings = strings();
-        for (String out:strings){
+    public static void printStringArray(String[] strings) {
+       for (String out : strings) {
             System.out.println(out);
         }
     }
+
+    public static void main(String[] args) {
+       String[] strings = strings();
+       String shortest = strings[0];
+       int shortestPosition =0;
+       String longest = strings[0];
+       int longestPosition =0;
+       for (int i =0; i<strings.length; i++){
+           if (shortest.length()>strings[i].length()){
+               shortest = strings[i];
+               shortestPosition=i;
+               }
+           if (longest.length()<strings[i].length()){
+               longest = strings[i];
+               longestPosition=i;
+           }
+       }
+        System.out.println("Shortest: "+strings[shortestPosition]+" at position: "+shortestPosition);
+        System.out.println("Longest: "+strings[longestPosition]+" at position: "+longestPosition);
+    }
 }
+
+
