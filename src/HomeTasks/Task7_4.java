@@ -1,7 +1,7 @@
 package HomeTasks;
 
 import java.util.Scanner;
-
+// test
 public class Task7_4 {
     public static String[] words() {
         Scanner scan = new Scanner(System.in);
