@@ -23,25 +23,24 @@ public class Task7_5 {
             }
         }
         System.out.println("Words with latin characters only: " + engWords.size());
-        int wordCount =0;
+        int wordCount = 0;
 
-        for (String word:engWords){
+        for (String word : engWords) {
             word = word.toLowerCase();
             int vowel = 0;
             int cons = 0;
-            for (int i =0;i<word.length();i++){
+            for (int i = 0; i < word.length(); i++) {
                 if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'i'
-                        || word.charAt(i) == 'o' || word.charAt(i) == 'u'){
+                        || word.charAt(i) == 'o' || word.charAt(i) == 'u') {
                     vowel++;
-                }
-                else cons++;
-                }
-            if(vowel==cons){
+                } else cons++;
+            }
+            if (vowel == cons) {
                 wordCount++;
             }
 
         }
-        System.out.println("Word with same number of vovwel / cons letters: "+wordCount);
+        System.out.println("Word with same number of vovwel / cons letters: " + wordCount);
     }
 
 

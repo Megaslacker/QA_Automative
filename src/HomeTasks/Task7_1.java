@@ -18,30 +18,30 @@ public class Task7_1 {
     }
 
     public static void printStringArray(String[] strings) {
-       for (String out : strings) {
+        for (String out : strings) {
             System.out.println(out);
         }
     }
 
     public static void main(String[] args) {
-       String[] strings = strings();
-       String shortest = strings[0];
-       int shortestPosition =0;
-       String longest = strings[0];
-       int longestPosition =0;
-       for (int i =0; i<strings.length; i++){
-           if (shortest.length()>strings[i].length()){
-               shortest = strings[i];
-               shortestPosition=i;
-               }
-           if (longest.length()<strings[i].length()){
-               longest = strings[i];
-               longestPosition=i;
-           }
-       }
-       String atPosition = " at position: ";
-        System.out.println("Shortest: "+strings[shortestPosition]+atPosition+shortestPosition);
-        System.out.println("Longest: "+strings[longestPosition]+atPosition+longestPosition);
+        String[] strings = strings();
+        String shortest = strings[0];
+        int shortestPosition = 0;
+        String longest = strings[0];
+        int longestPosition = 0;
+        for (int i = 0; i < strings.length; i++) {
+            if (shortest.length() > strings[i].length()) {
+                shortest = strings[i];
+                shortestPosition = i;
+            }
+            if (longest.length() < strings[i].length()) {
+                longest = strings[i];
+                longestPosition = i;
+            }
+        }
+        String atPosition = " at position: ";
+        System.out.println("Shortest: " + strings[shortestPosition] + atPosition + shortestPosition);
+        System.out.println("Longest: " + strings[longestPosition] + atPosition + longestPosition);
     }
 }
 

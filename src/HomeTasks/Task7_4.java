@@ -32,7 +32,7 @@ public class Task7_4 {
             }
 
         }
-        System.out.println("Word with minimum unique characters: "+words[mixValuePosition]);
+        System.out.println("Word with minimum unique characters: " + words[mixValuePosition]);
 
     }
 
